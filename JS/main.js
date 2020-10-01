@@ -10,7 +10,30 @@ $(document).ready(function(){
           nextIcon = "<img src='./images/right_arrow.png'>",
           prevIcon = "<img src='./images/left_arrow.png'>";
 
+
     $('.owl-one').owlCarousel({
+        loop:true,
+        nav:false,
+        autoplay:false,
+        center: true,
+        addClassActive: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:3
+            },
+            1198:{
+                items:5
+            }
+        }
+    })
+
+    $('.owl-two').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -24,10 +47,10 @@ $(document).ready(function(){
                 items:1
             },
             567:{
-                items:1
+                items:2
             },
             768:{
-                items:2
+                items:3
             },
             1000:{
                 items:3
@@ -35,8 +58,7 @@ $(document).ready(function(){
         }
     })
 
-
-    $('.owl-two').owlCarousel({
+    $('.owl-three').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -55,38 +77,10 @@ $(document).ready(function(){
                 items:1
             },
             768:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
-
-
-    $('.owl-three').owlCarousel({
-        loop:true,
-        // margin:0,
-        nav:true,
-        autoplay:false,
-        center: true,
-        addClassActive: false,
-        navText: [
-            prevIcon,
-            nextIcon
-        ],
-        responsive:{
-            0:{
-                items:1
-            },
-            567:{
-                items:1
-            },
-            768:{
                 items:3
             },
             1000:{
-                items:5
+                items:3
             }
         }
     })
@@ -124,10 +118,11 @@ $(document).ready(function(){
         },1000);
     });
 
+    // when click on the menu bar icon
+    var navbarMenuBtn = $('#navbarMenuBtn');
 
-    
-    // $('.certification .owl-two .owl-item:nth-child(2)').addClass('active').siblings().removeClass('active');
-
-
-
+    navbarMenuBtn.click(function(){
+        $('.navbar').toggleClass('mobileNavbar');
+    });
+ 
 });
