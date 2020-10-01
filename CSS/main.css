@@ -65,9 +65,19 @@
 }
 
 .navbar-expand-lg .navbar-nav .contactPage {
-    border-right: none  ;
+    border-right: none;
 }
 
+.dropdown .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid #1E2A40;
+    border-radius: 0;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background: #1E2A40;
+    color: #fff;
+}
 /* ============== End Navbar ===============  */
 /* ============== Start Main =============== */
 main {
@@ -85,7 +95,6 @@ main .row {
 }
 
 main .topImg {
-    /* background: red; */
     width: 100%;
     height: 100px;
     margin-top: 180px;
@@ -96,28 +105,28 @@ main .topImg img {
     height: 70px;
 }
 
-main .row .owl-three {
+main .row .owl-one {
     width: 100%;
     margin-top: -50px;
     padding-bottom: 80px;
 }
 
-main .owl-three .item {
+main .owl-one .item {
     padding: 30px 15px; 
 }
 
-main .owl-three img {
+main .owl-one img {
     height: 300.5px;
     transition: 0.3s ease-in-out;
 }
 
-main .owl-three .owl-item {
+main .owl-one .owl-item {
     transform: scale(1);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-main .owl-three .owl-item:hover {
+main .owl-one .owl-item:hover {
     transform: scale(1.2);
     z-index: 50;
 }
@@ -136,7 +145,12 @@ main .LeftMainItems {
     z-index: 3;
 }
 
+main .owl-theme .owl-dots {
+    display: none;
+} 
+
 /* ============== End Main =============== */
+/* ============== Start go_up icon =============== */
 .go_up {
     position: fixed;
     z-index: 5;
@@ -150,6 +164,7 @@ main .LeftMainItems {
     cursor: pointer;
     display: none;
 }
+/* ============== End go_up icon =============== */
 /* ============== Start about_us =============== */
 .about_us {
     padding: 50px 0;
@@ -207,16 +222,16 @@ main .LeftMainItems {
     display: none;
 }
 
-.about_us .aboutUsRight .owl-one .item {
+.about_us .aboutUsRight .owl-two .item {
     height: 100px;
     width: 85px;
 }
 
-.about_us .aboutUsRight .owl-one {
+.about_us .aboutUsRight .owl-two {
     margin-top: 30px;
 }
 
-.about_us .aboutUsRight .owl-one .owl-item {
+.about_us .aboutUsRight .owl-two .owl-item {
     display: flex;
     justify-content: center;
 }
@@ -254,7 +269,7 @@ main .LeftMainItems {
 /* ============== End about_us =============== */
 /* ============== Start News =============== */
 .news {
-    background-image: url("../images/Curve.svg");
+    background-image: url("../images/New_curve_2.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0 400px;
@@ -292,7 +307,12 @@ main .LeftMainItems {
     width: 30%;
     padding: 10px 30px;
     text-align: center;
+    transition: 0.2s ease-in-out;
     border-radius: 20px;
+}
+
+.news .news_more a:hover {
+    box-shadow: 0 0 20px #EBA533;
 }
 /* ============== End News =============== */
 /* ============== Start Contact_Us =============== */
@@ -309,7 +329,8 @@ main .LeftMainItems {
 }
 
 .contact_us img:first-child {
-    left: 80px;
+    top: -150px;
+    left: 20px;
     animation: ContactAnimation1 5s ease-in-out 0.3s alternate  infinite;
 }
 
@@ -324,8 +345,9 @@ main .LeftMainItems {
 }
 
 .contact_us img:last-child {
-    right: 70px;
+    right: 40px;
     top: 170px;
+    z-index: -5;
     animation: ContactAnimation2 5s ease-in-out 0.3s alternate  infinite;
 }
 
@@ -371,12 +393,18 @@ main .LeftMainItems {
     border-radius: 50px;
     margin-top: -50px;
     box-shadow: 0 0 20px #ddd;
+    padding: 0;
 }
 
 .contact_us form input[type='submit'] {
     padding: 5px 25px;
     border: none;
     font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.contact_us form input[type='submit']:hover {
+    box-shadow: 0 0 20px #5F9538;
 }
 /* ============== End Contact_Us =============== */
 /* ============== Start Certification =============== */
@@ -394,16 +422,16 @@ main .LeftMainItems {
     display: none;
 }
 
-.certification .owl-two .item {
+.certification .owl-three .item {
     height: 200px; 
     width: 240px;
 }
 
-.certification .owl-two {
+.certification .owl-three {
     margin-top: 30px;
 }
 
-.certification .owl-two .owl-item {
+.certification .owl-three .owl-item {
     display: flex;
     justify-content: center;
     transform: scale(0.7,0.7);
@@ -411,11 +439,11 @@ main .LeftMainItems {
     cursor: pointer;
 }
 
-.certification .owl-two .owl-item.center {
+.certification .owl-three .owl-item.center {
     transform: scale(1);
 }
 
-.certification .owl-two .owl-item:hover {
+.certification .owl-three .owl-item:hover {
     transform: scale(1);
 }
 
@@ -458,7 +486,7 @@ footer {
 
 footer .footerLeft img {
     width: 145px; 
-    height: 84.5;
+    height: 84.5px;
     transition: 0.3s ease-in-out;
 }
 
@@ -517,13 +545,649 @@ footer .footerCenter ul:last-child i:hover {
 
 footer .footerRight img {
     width: 94px; 
-    height: 91.5;
+    height: 91.5px;
     transition: 0.3s ease-in-out;
 }
 
 footer .footerRight img:hover {
     transform: scale(1.2,1.2);
 }
-
 /* ============== End footer =============== */
 
+/* ################ Start the responsive of the page ################ */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ============== Start Navbar ===============  */
+    .navChange .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 65px;
+        width: 110px;
+    }   
+
+    .navbar .navbar-brand img:hover {
+        transform: scale(1.1 , 1.1);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    } 
+    /* ============== End Navbar ===============  */
+    /* ============== Start Main =============== */
+    main .row {
+        height: 700px;
+    }
+
+    main .topImg img {
+        width: 140px;
+    }
+
+    main .row .owl-one {
+        width: 100%;
+        margin-top: -50px;
+        padding-bottom: 80px;
+    }
+
+    main .owl-one .item {
+        padding: 30px 50px; 
+    }
+
+    main .owl-one img {
+        height: 300px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        right: 20px;
+    }
+    /* ============== End go_up icon =============== */
+    /* ============== Start about_us =============== */
+    .about_us .aboutUsLeft img {
+        width: 260px;
+        height: 140px;
+        margin-top: 60px;
+    }
+
+    .about_us .aboutUsRight h1 {
+        font-size: 30px;
+    }
+
+    .about_us .aboutUsRight p {
+        font-size: 17px;
+    }
+
+    .about_us .aboutUsRight .owl-next {
+        margin-right: -10px;
+    }
+
+    .about_us .aboutUsRight .owl-prev {
+        margin-left: -10px;
+    }
+    /* ============== End about_us =============== */
+    /* ============== Start News =============== */
+    .news {
+        background-position: center center;
+        padding: 50px 0 300px;
+        margin-top: -265px;
+    }
+
+    .news .news_img,
+    .news .news_more {
+        margin-top: 250px;
+    }
+
+    .news .news_img img {
+        margin-top: -30px;
+        width: 90%;
+    }
+
+    .news .news_more h2 {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+
+    .news .news_more p {
+        font-size: 20px;
+        padding-right: 40px;
+        margin: 0px 0 20px;
+    }
+
+    .news .news_more a {
+        width: 35%;
+    }
+    /* ============== End News =============== */
+    /* ============== Start Contact_Us =============== */
+    .contact_us {
+        margin-top: -100px;
+        padding-bottom: 70px;
+        position: relative;
+    }
+
+    .contact_us img:first-child {
+        display: none;
+    }
+
+    .contact_us img:last-child {
+        right: 80px;
+        top: -150px;
+        z-index: 5;
+        animation: ContactAnimation2 5s ease-in-out 0.3s alternate  infinite;
+    }
+
+    @keyframes ContactAnimation2 {
+        0% {
+            transform: translateY(-80px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .contact_us iframe {
+        height: 300px;
+        border-radius: 40px;
+        margin-top: 0px;
+    }
+    /* ============== End Contact_Us =============== */
+    /* ============== Start Certification =============== */
+      .certification .owl-next {
+        margin-right: -15px !important;
+    }
+
+    .certification .owl-prev {   
+        margin-left: -15px !important;
+    }
+
+    .certification .owl-next img,
+    .certification .owl-prev img {
+        height: 25px;
+        width: 25px;
+    }
+    /* ============== End Certification =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding-bottom: 10px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 13%;
+        width: 74%;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) { 
+    /* ============== Start Navbar ===============  */
+    .navbar {
+        padding-top: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navChange {
+        background: #fff;
+        padding: 0;
+        position: fixed;
+        border-bottom: 4px solid #1E2A40;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbarMenu {
+        color: #1E2A40;
+    }
+
+    .navbar-toggler {
+        border: 2.5px solid #1E2A40;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .mobileNavbar {
+        background: #fff;
+    }
+
+    .navbar-nav {
+        border-right:4px solid #1E2A40 !important;
+        background: #fff;
+        padding: 20px 0;
+    } 
+
+    .navbar-nav .nav-link {
+        color: #1E2A40 !important; 
+        border: none;
+        font-size: 18px !important;
+        padding: 5px 0 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background: #1E2A40;
+        color: #fff !important;
+        padding-left: 30px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        border: none;
+    }
+
+    .dropdown .dropdown-menu {
+        border: none;
+        border-left: 4px solid #1E2A40;
+        border-radius: 0;
+    }
+    
+    .dropdown .dropdown-menu .dropdown-item {
+        font-size: 17px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .dropdown .dropdown-menu .dropdown-item:hover {
+        padding-left: 40px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start Main =============== */
+    main {
+        margin-top: -190px;
+    }
+
+    main .owl-one .item {
+        padding: 30px 20px; 
+    }
+
+    main .mainUnderImg {
+        margin-top: -210px;
+    }
+
+    main .RightMainItems {
+        height: 170px;
+        z-index: 3;
+    }
+
+    main .LeftMainItems {
+        height: 100px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start about_us =============== */
+    .about_us {
+        padding: 30px 0;
+    }
+
+    .about_us .aboutUsLeft img {
+        margin-top: 20px;
+    } 
+
+    .about_us .aboutUsCenter img {
+        margin-top: -180px;
+        margin-right: 150px;
+    }
+
+    .about_us .aboutUsRight .owl-two {
+        margin-top: 40px;
+    }
+
+    .about_us .aboutUsRight .owl-next {
+        margin-right: 0px;
+        margin-top: -250px;
+    }
+
+    .about_us .aboutUsRight .owl-prev {
+        margin-left: -0x;
+        margin-top: -250px;
+    }
+    /* ============== End about_us =============== */
+    /* ============== Start News =============== */
+    .news {
+        background-position: right;
+        margin-top: -225px;
+    }
+
+    .news .news_img,
+    .news .news_more {
+        margin-top: 250px;
+    }
+
+    .news .news_img img {
+        margin-top: 0px;
+        width: 100%;
+        height: 270px;
+    }
+
+    .news .news_more h2 {
+        font-size: 25px;
+    }
+
+    .news .news_more p {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+
+    .news .news_more a {
+        width: 50%;
+    }
+    /* ============== End News =============== */
+    /* ============== Start Contact_Us =============== */
+    .contact_us {
+        margin-top: -150px;
+    }
+
+    .contact_us img {
+        position: absolute;
+        width: 71px;
+        height: 150.5px;
+    }
+
+    .contact_us img:last-child {
+        right: 140px;
+        top: -100px;
+        z-index: 5;
+    }
+
+    .contact_us form {
+        margin-bottom: 80px;
+        padding: 0 15px;
+    }
+
+    .contact_us form textarea {
+        height: 120px;
+    }
+    /* ============== End Contact_Us =============== */
+    /* ============== Start Certification =============== */
+    .certification .owl-three {
+        margin-top: 30px;
+    }
+
+    .certification .owl-three .owl-item {
+        display: flex;
+        justify-content: center;
+        transform: scale(0.7,0.7);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .certification .owl-three .owl-item.center {
+        transform: scale(1);
+    }
+
+    .certification .owl-three .owl-item:hover {
+        transform: scale(1);
+    }
+
+    .certification .owl-next {
+        margin-right: -20px !important;
+    }
+
+    .certification .owl-prev {
+        margin-left: -20px !important;
+    }
+
+    .certification .owl-next img,
+    .certification .owl-prev img {
+        height: 25px;
+        width: 25px;
+    }
+    /* ============== End Certification =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 5%;
+        width: 90%;
+    }
+
+    footer .footerCenter ul:first-child a {
+        font-size: 18px;
+    }
+
+    footer .footerCenter ul:last-child {
+        margin-top: 0px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) { 
+    /* ============== Start Main =============== */
+    main .owl-one .item {
+        padding: 30px 150px; 
+    }
+    
+    main .RightMainItems {
+        margin-right: 50px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start about_us =============== */
+    .about_us {
+        padding: 30px 0;
+    }
+
+    .about_us .aboutUsLeft img {
+        margin-top: 20px;
+        height: 140px;
+    } 
+
+    .about_us .aboutUsCenter img {
+        margin-top: -180px;
+        margin-right: -370px;
+    }
+
+    .about_us .aboutUsRight {
+        justify-content: center;
+    }
+
+    .about_us .aboutUsRight .owl-next {
+        margin-right: 40%;
+        margin-top: 0px;
+    }
+
+    .about_us .aboutUsRight .owl-prev {
+        margin-left: 40%;
+        margin-top: 0px;
+    }
+    /* ============== End about_us =============== */
+    /* ============== Start News =============== */
+    .news {
+        background-position: left center;
+        margin-top: -150px;
+    }
+
+    .news .news_img {
+        margin-top: 220px;
+    }
+
+    .news .news_more {
+        margin-top: 70px;
+    }
+
+    .news .news_more a {
+        width: 30%;
+    }
+    /* ============== End News =============== */
+    /* ============== Start Certification =============== */
+    .certification .owl-next {
+        margin-right: -20px !important;
+    } 
+
+    .certification .owl-prev {
+        margin-left: -20px !important;
+    }
+    /* ============== End Certification =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child {
+        margin-top: 30px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 10%;
+        width: 80%;
+    }
+
+    footer .footerRight {
+        margin-top: -210px;
+        margin-left: 400px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) { 
+    /* ============== Start Navbar ===============  */
+    .navbar-brand img {
+       height: 60px !important;
+       width: 100px !important;
+    }
+
+    .navChange .navbar-toggler {
+        margin-right: 10px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start Main =============== */
+    main {
+        overflow: hidden;
+    }
+
+    main .owl-one .item {
+        padding: 30px 25%; 
+    }
+    
+    main .RightMainItems {
+        margin-right: 50px;
+        height: 130px;
+    }
+
+    main .mainUnderImg {
+        margin-top: -170px;
+    }
+
+    main .LeftMainItems {
+        height: 90px;
+        width: 155px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start about_us =============== */
+    .about_us {
+        padding: 30px 0;
+    }
+
+    .about_us .aboutUsLeft {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .about_us .aboutUsLeft img {
+        height: 100px;
+        width: 200px;
+    } 
+
+    .about_us .aboutUsCenter {
+        display: none !important;
+    }
+
+    .about_us .aboutUsRight h1 {
+        font-size: 25px;
+    } 
+
+    .about_us .aboutUsRight p {
+        font-size: 16px;
+    } 
+    /* ============== End about_us =============== */
+    /* ============== Start News =============== */
+    .news {
+        background-position: center center;
+        margin-top: -150px;
+    }
+
+    .news .news_img {
+        margin-top: 100px;
+    }
+
+    .news .news_more a {
+        width: 60%;
+    }
+    /* ============== End News =============== */
+    /* ============== Start Contact_Us =============== */
+    .contact_us iframe {
+        border-radius: 20px;
+        margin-top: -30px;
+    }
+    /* ============== End Contact_Us =============== */
+    /* ============== Start Certification =============== */
+    .certification .owl-nav {
+        justify-content: center;
+    }
+
+    .certification .owl-next {
+        margin-top: -20px !important;
+        margin-right: 30% !important;
+    } 
+
+    .certification .owl-prev {
+        margin-top: -20px !important;
+        margin-left: 30% !important;
+    }
+    
+    .certification .owl-next img,
+    .certification .owl-prev img {
+        height: 20px;
+        width: 20px;
+    }
+    /* ============== End Certification =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 40px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 90px; 
+        height: 60px;
+    }
+
+    footer .footerRight {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    footer .footerRight img {
+        height: 70px;
+        margin-top: 10px;
+    }
+    
+    footer .footerLeft,
+    footer .footerRight {
+        display: flex; 
+        justify-content: center !important;
+    }
+
+    footer .footerRight img:hover {
+        transform: scale(1.1);
+    }
+    /* ============== End footer =============== */
+}
