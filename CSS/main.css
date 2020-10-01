@@ -757,6 +757,14 @@ footer .footerRight img:hover {
         background: #fff;
         padding: 20px 0;
     } 
+    
+    .navChange {
+        padding: 30px 16px 8px;
+    }
+
+    .navChange .navbar-nav {
+        border-right: none !important;
+    }
 
     .navbar-nav .nav-link {
         color: #1E2A40 !important; 
@@ -882,8 +890,8 @@ footer .footerRight img:hover {
     }
 
     .contact_us img:last-child {
-        right: 140px;
-        top: -100px;
+        right: 40px;
+        top: -120px;
         z-index: 5;
     }
 
