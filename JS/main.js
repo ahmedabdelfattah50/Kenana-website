@@ -12,10 +12,10 @@ $(document).ready(function(){
 
 
     $('.owl-one').owlCarousel({
-        loop:true,
+        loop:false,
         nav:false,
         autoplay:false,
-        center: true,
+        center: false,
         addClassActive: false,
         responsive:{
             0:{
@@ -25,16 +25,84 @@ $(document).ready(function(){
                 items:1
             },
             768:{
+                items:2
+            },
+            910:{
+                items:2
+            },
+            995:{
                 items:3
             },
             1198:{
+                items:4
+            },
+            1400:{
                 items:5
             }
         }
     })
 
+    $('.owl-one_1').owlCarousel({
+        loop:false,
+        nav:false,
+        autoplay:false,
+        center: false,
+        addClassActive: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            910:{
+                items:2
+            },
+            995:{
+                items:3
+            },
+            1198:{
+                items:3
+            },
+            1400:{
+                items:4
+            }
+        }
+    })
+
+    $('.owl-one_2').owlCarousel({
+        loop:false,
+        nav:false,
+        autoplay:false,
+        center: false,
+        addClassActive: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            841:{
+                items:3
+            },
+            1400:{
+                items:5
+            },
+            1500:{
+                items:6
+            }
+        }
+    })
+
     $('.owl-two').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         nav:true,
         autoplay:true,
