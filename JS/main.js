@@ -102,7 +102,7 @@ $(document).ready(function(){
     })
 
     $('.owl-two').owlCarousel({
-        loop:false,
+        loop:true,
         margin:10,
         nav:true,
         autoplay:true,
