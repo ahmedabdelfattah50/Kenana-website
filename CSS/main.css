@@ -8,7 +8,7 @@
 .navbar {
     padding-top: 30px;
     transition: 0.3s ease-in-out;
-    z-index: 5;
+    z-index: 2000 !important;
 }
 
 .navChange {
@@ -76,13 +76,12 @@
     border-radius: 0;
 }
 
-.dropdown .dropdown-menu .dropdown-item:hover {
-    background: #1E2A40;
+.nav-item .dropdown-menu a:hover {
+    background: #1e2a40;
     color: #fff;
 }
 /* ============== End Navbar ===============  */
 /* ============== Start Main =============== */
-
 main {
     margin-top: -121px;
 }
