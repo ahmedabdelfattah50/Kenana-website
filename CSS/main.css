@@ -113,11 +113,6 @@ main .carousel-control-next {
     transition: 0.3s ease-in-out;
 }
 
-main .carousel-control-prev:hover,
-main .carousel-control-next:hover {
-    background: rgba(255, 255, 255, 0.285);
-}
-
 main .main_slider_1,
 main .main_slider_2,
 main .main_slider_3,
