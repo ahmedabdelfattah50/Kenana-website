@@ -8,6 +8,7 @@
 .navbar {
     padding-top: 30px;
     transition: 0.3s ease-in-out;
+    z-index: 5;
 }
 
 .navChange {
@@ -16,6 +17,7 @@
     position: fixed;
     border-bottom: 4px solid #1E2A40;
     transition: 0.3s ease-in-out;
+    z-index: 200 !important
 }
 
 .navChange .navbar-nav .nav-link {
@@ -80,18 +82,64 @@
 }
 /* ============== End Navbar ===============  */
 /* ============== Start Main =============== */
+
 main {
-    background-image: url("../images/mainBackground.png");
+    margin-top: -121px;
+}
+
+main .carousel-caption {
+    padding-bottom: 0;
+}
+
+main .carousel-indicators {
+    display: none;
+    padding-bottom: 0;
+}
+
+main .carousel-control-prev img,
+main .carousel-control-next img {
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+main .carousel-control-prev:hover img ,
+main .carousel-control-next:hover img {
+    transform: scale(1.2);
+}
+
+main .carousel-control-prev, 
+main .carousel-control-next {
+    transition: 0.3s ease-in-out;
+}
+
+main .carousel-control-prev:hover,
+main .carousel-control-next:hover {
+    background: rgba(255, 255, 255, 0.285);
+}
+
+main .main_slider_1,
+main .main_slider_2,
+main .main_slider_3,
+main .main_slider_4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    height: 650px;
-    margin-top: -125px;
-    margin-left: -10px;
+    height: 740px;
+    margin-bottom: -20px;
 }
 
-main .row {
-    height: 700px;
+main .main_slider_1 {
+    background-image: url("../images/mainBackgroundSlider1.png");
+}
+
+main .main_slider_2 {
+    background-image: url("../images/mainBackgroundSlider2.png");
+}
+
+main .main_slider_3,
+main .main_slider_4 {
+    background-image: url("../images/mainBackgroundSlider3.png");
 }
 
 main .topImg {
@@ -105,14 +153,19 @@ main .topImg img {
     height: 70px;
 }
 
-main .row .owl-one {
+main .row .owl-one,
+main .row .owl-one_1,
+main .row .owl-one_2 {
     width: 100%;
     margin-top: -50px;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
 }
 
-main .owl-one .item {
+main .owl-one .item,
+main .owl-one_1 .item,
+main .owl-one_2 .item {
     padding: 30px 15px; 
+    z-index: -2;
 }
 
 main .owl-one img {
@@ -120,19 +173,35 @@ main .owl-one img {
     transition: 0.3s ease-in-out;
 }
 
-main .owl-one .owl-item {
+main .owl-one_1 img {
+    height: 300.5px;
+    transition: 0.3s ease-in-out;
+}
+
+main .owl-one_2 img {
+    height: 300.5px;
+    width: 170px !important;
+    transition: 0.3s ease-in-out;
+}
+
+main .owl-one .owl-item,
+main .owl-one_1 .owl-item,
+main .owl-one_2 .owl-item {
     transform: scale(1);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
-main .owl-one .owl-item:hover {
+main .owl-one .owl-item:hover,
+main .owl-one_1 .owl-item:hover ,
+main .owl-one_2 .owl-item:hover  {
     transform: scale(1.2);
     z-index: 50;
 }
 
 main .mainUnderImg {
-    margin-top: -250px;
+    margin-top: -200px;
+    /* background: red; */
 }
 
 main .RightMainItems {
@@ -188,7 +257,7 @@ main .owl-theme .owl-dots {
     width: 71.5px;
     margin-top: -150px;
     animation: aboutUsCenterAnimation 3s ease-in-out 0.3s alternate  infinite;
-    z-index: 5;
+    z-index: 10;
 }
 
 @keyframes aboutUsCenterAnimation {
@@ -272,7 +341,7 @@ main .owl-theme .owl-dots {
     background-image: url("../images/New_curve_2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 400px;
+    padding: 150px 0 425px;
     margin-top: -300px;
 }
 
@@ -585,17 +654,17 @@ footer .footerRight img:hover {
         width: 140px;
     }
 
-    main .row .owl-one {
+    main .row .owl-one,
+    main .row .owl-one_1,
+    main .row .owl-one_2 {
         width: 100%;
         margin-top: -50px;
         padding-bottom: 80px;
     }
 
-    main .owl-one .item {
-        padding: 30px 50px; 
-    }
-
-    main .owl-one img {
+    main .owl-one img,
+    main .owl-one_1 img,
+    main .owl-one_2 img {
         height: 300px;
     }
     /* ============== End Main =============== */
@@ -694,7 +763,7 @@ footer .footerRight img:hover {
     }
     /* ============== End Contact_Us =============== */
     /* ============== Start Certification =============== */
-      .certification .owl-next {
+    .certification .owl-next {
         margin-right: -15px !important;
     }
 
@@ -757,7 +826,7 @@ footer .footerRight img:hover {
         background: #fff;
         padding: 20px 0;
     } 
-    
+
     .navChange {
         padding: 0px 16px 0px;
     }
@@ -803,8 +872,17 @@ footer .footerRight img:hover {
         margin-top: -190px;
     }
 
-    main .owl-one .item {
-        padding: 30px 20px; 
+    main .carousel-control-prev img,
+    main .carousel-control-next img {
+        height: 20px;
+        width: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    main .owl-one .item,
+    main .owl-one_1 .item,
+    main .owl-one_2 .item {
+        padding: 30px 40px; 
     }
 
     main .mainUnderImg {
@@ -971,13 +1049,26 @@ footer .footerRight img:hover {
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) { 
     /* ============== Start Main =============== */
-    main .owl-one .item {
-        padding: 30px 150px; 
+    main .owl-one .item,
+    main .owl-one_1 .item,
+    main .owl-one_2 .item {
+        padding: 30px 25%; 
     }
     
     main .RightMainItems {
         margin-right: 50px;
+        height: 130px;
     }
+
+    main .mainUnderImg {
+        margin-top: -170px;
+    }
+
+    main .LeftMainItems {
+        height: 90px;
+        width: 155px;
+    }
+
     /* ============== End Main =============== */
     /* ============== Start about_us =============== */
     .about_us {
@@ -1082,22 +1173,25 @@ footer .footerRight img:hover {
         overflow: hidden;
     }
 
-    main .owl-one .item {
-        padding: 30px 25%; 
+    main .owl-one .item,
+    main .owl-one_1 .item,
+    main .owl-one_2 .item {
+        padding: 30px 20%; 
     }
     
     main .RightMainItems {
-        margin-right: 50px;
-        height: 130px;
+        margin-right: 10%;
+        height: 120px;
     }
 
     main .mainUnderImg {
-        margin-top: -170px;
+        margin-top: -170px; 
     }
 
     main .LeftMainItems {
         height: 90px;
-        width: 155px;
+        width: 100px;
+        margin-left: -5%;
     }
     /* ============== End Main =============== */
     /* ============== Start about_us =============== */
