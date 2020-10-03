@@ -195,7 +195,35 @@ $(document).ready(function(){
             }
         }
     })
-
-   
+    
+    // ################# about_us Page #################    
+    const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
+    prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
+    
+    $('.owl-four').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        center: false,
+        addClassActive: false,
+        navText: [
+            prevIconInfo,
+            nextIconInfo
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })   
 
 });
