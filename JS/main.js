@@ -1,14 +1,57 @@
 $(document).ready(function(){
 
+    // ################# Global #################    
+
     // this for insilize the init of wow.js plugn
     new WOW().init(); 
 
-    // ================ this for slider by owl plugin
 
-    const nextIcon_1 = "<img src='./images/right_arrow_green.png'>",
-          prevIcon_1 = "<img src='./images/left_arrow_green.png'>",
-          nextIcon = "<img src='./images/right_arrow.png'>",
-          prevIcon = "<img src='./images/left_arrow.png'>";
+    var goUp = $('.go_up'),
+        navBar = $('.navbar');
+
+    // when click on the menu bar icon
+    var navbarMenuBtn = $('#navbarMenuBtn');
+
+    navbarMenuBtn.click(function(){
+        $('.navbar').toggleClass('mobileNavbar');
+    });
+
+    $(window).scroll(function(){
+
+        // navbar change
+        if($(this).scrollTop() > 120){
+            navBar.addClass('navChange');
+            navBar.addClass('fixed-top');
+        } else {
+            navBar.removeClass('navChange');
+            navBar.removeClass('fixed-top');
+        }
+
+        // this for icon to go up when scroll
+        if($(this).scrollTop() > 100){
+            if(goUp.is(":hidden")){
+                goUp.fadeIn();
+            }
+        } else {
+            goUp.fadeOut();
+        }
+    });
+
+    // this for the animation of the icon go up
+    goUp.click(function(event){
+        event.preventDefault();
+
+        $('html , body').animate({
+            scrollTop: 0
+        },1000);
+    });
+
+    // ################# Home Page #################
+    // ================ this for slider by owl plugin
+    const nextIcon_1 = "<img src='./images/main_page/right_arrow_green.png'>",
+          prevIcon_1 = "<img src='./images/main_page/left_arrow_green.png'>",
+          nextIcon = "<img src='./images/main_page/right_arrow.png'>",
+          prevIcon = "<img src='./images/main_page/left_arrow.png'>";
 
 
     $('.owl-one').owlCarousel({
@@ -153,44 +196,34 @@ $(document).ready(function(){
         }
     })
 
-    var goUp = $('.go_up'),
-        navBar = $('.navbar');
-
-    $(window).scroll(function(){
-        
-        // navbar change
-        if($(this).scrollTop() > 120){
-            navBar.addClass('navChange');
-            navBar.addClass('fixed-top');
-        } else {
-            navBar.removeClass('navChange');
-            navBar.removeClass('fixed-top');
-        }
-
-        // this for icon to go up when scroll
-        if($(this).scrollTop() > 100){
-            if(goUp.is(":hidden")){
-                goUp.fadeIn();
+    // ################# about_us Page #################    
+    const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
+    prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
+    
+    $('.owl-four').owlCarousel({
+        loop:true,
+        nav:true,
+        autoplay:true,
+        center: false,
+        addClassActive: false,
+        navText: [
+            prevIconInfo,
+            nextIconInfo
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            567:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1000:{
+                items:3
             }
-        } else {
-            goUp.fadeOut();
         }
-    });
+    })
 
-    // this for the animation of the icon go up
-    goUp.click(function(event){
-        event.preventDefault();
-
-        $('html , body').animate({
-            scrollTop: 0
-        },1000);
-    });
-
-    // when click on the menu bar icon
-    var navbarMenuBtn = $('#navbarMenuBtn');
-
-    navbarMenuBtn.click(function(){
-        $('.navbar').toggleClass('mobileNavbar');
-    });
- 
 });
