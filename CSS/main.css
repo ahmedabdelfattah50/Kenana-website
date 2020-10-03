@@ -124,16 +124,16 @@ main .main_slider_4 {
 }
 
 main .main_slider_1 {
-    background-image: url("../images/mainBackgroundSlider1.png");
+    background-image: url("../images/main_page/mainBackgroundSlider1.png");
 }
 
 main .main_slider_2 {
-    background-image: url("../images/mainBackgroundSlider2.png");
+    background-image: url("../images/main_page/mainBackgroundSlider2.png");
 }
 
 main .main_slider_3,
 main .main_slider_4 {
-    background-image: url("../images/mainBackgroundSlider3.png");
+    background-image: url("../images/main_page/mainBackgroundSlider3.png");
 }
 
 main .topImg {
@@ -332,7 +332,7 @@ main .owl-theme .owl-dots {
 /* ============== End about_us =============== */
 /* ============== Start News =============== */
 .news {
-    background-image: url("../images/New_curve_2.png");
+    background-image: url("../images/main_page/New_curve_2.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 425px;
