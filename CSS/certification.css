@@ -120,8 +120,12 @@ header h1 {
 /* ============== End go_up icon =============== */
 /* ============== Start our_certification_1 =============== */
 .certification_1 {
-    padding: 120px 0 100px;
+    padding: 100px 0 40px;
 }
+
+/* .container {
+    background: red;
+} */
 
 .certification_1 .leftCertication_1 {
     background: #1e2a40;
@@ -153,6 +157,7 @@ header h1 {
     font-size: 35px;
     position: relative;
     margin-bottom: 30px;
+    margin-left: -15px;
 }
 
 .our_article_1 h2 img{
@@ -165,11 +170,12 @@ header h1 {
     color: #1E2A40;
     font-size: 18px;
     font-weight: 600;
+    margin-left: -15px;
 } 
 /* ============== End our_article_1 =============== */
 /* ============== Start our_certification_2 =============== */
 .certification_2 {
-    padding: 100px 0;
+    padding: 70px 0 40px;
 }
 
 .certification_2 .leftCertication_2 {
@@ -178,12 +184,14 @@ header h1 {
 
 .certification_2 .leftCertication_2 h2 {
     color: #F7C472;
+    margin-left: -15px;
 }
 
 .certification_2 .leftCertication_2 p {
     color: #1E2A40;
     font-size: 18px;
     font-weight: 700;
+    margin-left: -15px;
 } 
 
 .certification_2 .rightCertication_2 {
@@ -202,6 +210,7 @@ header h1 {
     font-size: 35px;
     position: relative;
     margin-bottom: 30px;
+    margin-right: -15px;
 }
 
 .our_article_2 h2 img{
@@ -215,6 +224,7 @@ header h1 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 60px;
+    margin-left: -15px;
 } 
 
 /* ============== End our_article_2 =============== */
@@ -498,6 +508,9 @@ footer .footerRight img:hover {
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) { 
+        /* .container {
+            background: green;
+        } */
     /* ============== Start our_certification_1 =============== */
     .certification_1 .leftCertication_1 {
         padding: 20px 0;
@@ -514,6 +527,7 @@ footer .footerRight img:hover {
     /* ============== Start our_article_1 =============== */
     .our_article_1 h2 {
         font-size: 30px;
+        margin-top: -30px;
     }
 
     .our_article_1 h2 img { 
@@ -523,15 +537,17 @@ footer .footerRight img:hover {
     /* ============== End our_article_1 =============== */
     /* ============== Start our_certification_2 =============== */
     .certification_2 .leftCertication_2 {
-        padding-right: 50px;
+        padding-right: 0px;
     }
 
     .certification_2 .leftCertication_2 h2 {
         font-size: 30px;
+        margin-left: 0;
     }
 
     .certification_2 .leftCertication_2 p {
         font-weight: 600;
+        margin-left: 0;
     } 
 
     .certification_2 .rightCertication_2 {
@@ -541,6 +557,7 @@ footer .footerRight img:hover {
     /* ============== Start our_article_2 =============== */
     .our_article_2 h2 {
         font-size: 30px;
+        margin-top: -30px;
     }
 
     .our_article_2 h2 img {
@@ -620,6 +637,11 @@ footer .footerRight img:hover {
     /* ============== Start our_article_1 =============== */
     .our_article_1 h2 {
         font-size: 22px;
+        margin-left: -5px;
+    }
+
+    .our_article_1 p {
+        margin-left: -5px;
     }
 
     .our_article_1 h2 img {
@@ -654,6 +676,11 @@ footer .footerRight img:hover {
     .our_article_2 h2 {
         font-size: 22px;
         text-align: left !important;
+        margin-left: -5px;
+    }
+
+    .our_article_2 p {
+        margin-left: -5px;
     }
 
     .our_article_2 h2 img {
@@ -692,9 +719,3 @@ footer .footerRight img:hover {
     }
     /* ============== End footer =============== */
 }
-
-
-
-
-
-
