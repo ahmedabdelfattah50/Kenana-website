@@ -123,10 +123,6 @@ header h1 {
     padding: 100px 0 40px;
 }
 
-/* .container {
-    background: red;
-} */
-
 .certification_1 .leftCertication_1 {
     background: #1e2a40;
     padding: 30px 0;
@@ -508,9 +504,6 @@ footer .footerRight img:hover {
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) { 
-        /* .container {
-            background: green;
-        } */
     /* ============== Start our_certification_1 =============== */
     .certification_1 .leftCertication_1 {
         padding: 20px 0;
