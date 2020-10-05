@@ -244,7 +244,11 @@ $(document).ready(function(){
         // ],
         responsive:{
             0:{
-                items:1.5
+                // loop: false,
+                autoplay:true,
+                center: true,
+                addClassActive: false,
+                items:1.2
             },
             567:{
                 loop: true,
