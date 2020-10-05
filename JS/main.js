@@ -195,7 +195,7 @@ $(document).ready(function(){
             }
         }
     })
-    
+
     // ################# about_us Page #################    
     const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
     prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
@@ -224,6 +224,90 @@ $(document).ready(function(){
                 items:3
             }
         }
-    })   
+    })
+
+    // ################# Careers Page #################    
+    // const nextIconInfo = "<img src='./images/about_us/right_arrow.svg'>",
+    // prevIconInfo = "<img src='./images/about_us/left_arrow.svg'>";
+    
+    $('.owl-five').owlCarousel({
+        loop:true,
+        nav:false,
+        autoplay:true,
+        // dots: true,
+        // dotClass:true,
+        center:true,
+        addClassActive: false,
+        // navText: [
+        //     prevIconInfo,
+        //     nextIconInfo
+        // ],
+        responsive:{
+            0:{
+                items:1.5
+            },
+            567:{
+                loop: true,
+                center: true,
+                addClassActive: true,
+                autoplay:true,
+                items:2
+            },
+            768:{
+                items:2
+            },
+            910:{
+                items:2
+            },
+            995:{
+                // loop: true,
+                // center: true,
+                // addClassActive: true,
+                // autoplay:true,
+                items:3
+            },
+            1198:{
+                items:3
+            },
+            1400:{
+                items:4
+            }
+        }
+    })
+
+    // var $itemSliderFive = $('.career_slider .owl-five .owl-item');
+    // $itemSliderFive.click(function(){
+    //     $('.career_slider .owl-five .owl-item').addClass('center').siblings().removeClass('center');
+        // console.log("yes");
+    // });
+
+    var $itemSliderFive = $('.career_slider .owl-five .owl-item');
+
+    /*$(".owl-five .owl-dots .owl-dot").click(function(){
+        var $centerItemTarget = $('.career_slider .owl-five .owl-item.center'+" .item").data('target');
+
+        // $(".sliderTotalArticles .slider_article"+$centerItemTarget).show(200).siblings().hide(200);
+        console.log($centerItemTarget);
+        $('.sliderTotalArticles .slider_article'+$centerItemTarget).show(200).siblings().hide(200);
+    });*/
+    
+    
+
+    $itemSliderFive.click(function(){
+        // console.log(      $(this).children('.item').data('target')    );
+        var $myTarget = $(this).children('.item').data('target');
+        // console.log(".sliderTotalArticles .slider_article"+$myTarget);
+        $(".sliderTotalArticles .slider_article"+$myTarget).show(200).siblings().hide(200);
+        // $(".sliderTotalArticles .slider_article").$($articleSectionId).show();
+    });
+
+    // ============== Start account_manager ===============
+
+    var accountManagerImg = $('.account_manager .accountManagerSection img');
+
+    $(accountManagerImg).click(function(){
+        $(this).parent().addClass('changePosition');
+        $('.account_manager .applyNowMessage').show(300);
+    });
 
 });
