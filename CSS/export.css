@@ -446,7 +446,7 @@ footer .footerRight img:hover {
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) { 
     /* ============== Start export_kenana =============== */
-    .certification_1 .leftExport {
+    .export_kenana .leftExport {
         padding: 20px 0;
     }
 
@@ -470,7 +470,7 @@ footer .footerRight img:hover {
 
     .kenana_article p::before {
         height: 12px;
-        width: 12px;
+        width: 12px; 
         top: 6px;
     }
     /* ============== End kenana article =============== */
@@ -574,9 +574,3 @@ footer .footerRight img:hover {
     }
     /* ============== End footer =============== */
 }
-
-
-
-
-
-
