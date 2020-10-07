@@ -1,0 +1,615 @@
+/* ============== Start Global ===============  */
+* {
+    margin: 0;
+    padding: 0;   
+}
+/* ============== End Global ===============  */
+/* ============== Start Navbar ===============  */
+.navbar {
+    padding-top: 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 2000 !important;
+}
+
+.navChange {
+    background: #fff;
+    padding: 0;
+    position: fixed;
+    border-bottom: 4px solid #1E2A40;
+    transition: 0.3s ease-in-out;
+    z-index: 200 !important
+}
+
+.navChange .navbar-nav .nav-link {
+    color: #1E2A40 !important; 
+    border-color:#1E2A40 !important;
+    font-size: 15px;
+}
+
+.navChange .navbar-nav .nav-link:hover {
+    background: #1E2A40;
+    color: #fff !important;
+}
+
+.navChange .navbar-brand {
+    padding: 0 !important;
+}
+
+.navChange img {
+    transform: scale(0.7,0.7);
+}
+
+.navChange img:hover {
+    transform: scale(0.8,0.8) !important;
+}
+
+.navbar .navbar-brand img {
+    height: 72.5px;
+    width: 125px;
+    transition: 0.3s ease-in-out;
+}   
+
+.navbar .navbar-brand img:hover {
+    transform: scale(1.2 , 1.2);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    border-right: 2px solid #fff;
+    padding: 0 10px;
+    transition: 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .contactPage {
+    border-right: none;
+}
+
+.dropdown .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid #1E2A40;
+    border-radius: 0;
+}
+
+.nav-item .dropdown-menu a:hover {
+    background: #1e2a40;
+    color: #fff;
+}
+/* ============== End Navbar ===============  */
+/* ============== Start Main =============== */
+main {
+    background-image: url("../images/videos/mainBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top top;
+    height: 200px;
+    margin-top: -121px;
+}
+/* ============== End Main =============== */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    z-index: 5;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #1E2A40;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* ============== End go_up icon =============== */
+/* ============== Start header =============== */
+header {
+    background-image: url("../images/videos/videosBackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+header h1 {
+    color: #fff;
+}
+/* ============== End header =============== */
+/* ============== Start SearchInput =============== */
+.SearchInput {
+    padding: 70px 0;
+    margin-bottom: -50px;
+}
+
+.SearchInput input {
+    border: 1px solid #ddd;
+    padding: 10px 70px 10px 20px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 30%;
+}
+
+.SearchInput i {
+    position: absolute;
+    padding: 14px 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: #F7C471;
+    font-size: 18px;
+    margin-left: 283px;
+    color: #fff;
+}
+
+/*  ============== End SearchInput =============== */
+/* ============== Start VideosSections =============== */
+.total_videos {
+    margin: 0 !important;
+    padding: 0px 0 70px 0;
+}
+.video_us {
+    padding: 50px 0;
+}
+
+.video_us .product_video {
+    position: relative;
+    background-image: url("../images/about_us/videoBackgroundInfo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%; 
+    padding: 240px 0;
+    box-shadow: 0 0 50px rgb(192, 177, 131);
+    border-radius: 10px;
+}
+
+.videoSection p {
+    margin-top: -30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E2A40;
+}
+
+.video_us .product_video .video_play {
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+.video_us .product_video .video_play i {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    border: 10px #fff solid;
+    padding: 30px;
+    border-radius: 50%; 
+    transition: 0.3s ease-in-out;
+}
+
+.video_us .product_video .video_play i:hover {
+    box-shadow: 0 0 40px #000;
+}
+/* ============== End VideosSections =============== */
+/* ============== Start footer =============== */
+footer {
+    padding: 60px 0 20px 0;
+    background-image: linear-gradient(#fff, #EABA6C);
+}
+
+footer .footerLeft img {
+    width: 145px; 
+    height: 84.5px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footerLeft img:hover {
+    transform: scale(1.2,1.2);
+}
+
+footer .footerCenter ul:first-child {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+footer .footerCenter ul:first-child::after {
+    position: absolute;
+    content: '';
+    left: 19%;
+    top: 100%;
+    height: 2px;
+    background: #000;
+    width: 62%;
+}
+
+footer .footerCenter ul:first-child a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+footer .footerCenter ul:first-child a:hover {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+footer .footerCenter ul:last-child {
+    margin-top: 20px;
+}
+
+footer .footerCenter ul:last-child i {
+    text-decoration: none;
+    color: #fff;
+    background: #333033;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+footer .footerCenter ul:last-child i:hover {
+    color: #333033;
+    background: #fff;
+}
+
+footer .footerRight img {
+    width: 94px; 
+    height: 91.5px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footerRight img:hover {
+    transform: scale(1.2,1.2);
+}
+/* ============== End footer =============== */
+
+/* ################ Start the responsive of the page ################ */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ============== Start Navbar ===============  */
+    .navChange .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 65px;
+        width: 110px;
+    }   
+
+    .navbar .navbar-brand img:hover {
+        transform: scale(1.1 , 1.1);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    } 
+    /* ============== End Navbar ===============  */
+    /* ============== Start header =============== */
+    header {
+        background-position: center;
+    }
+    /* ============== End header =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        right: 20px;
+    }
+    /* ============== End go_up icon =============== */
+    /* ============== Start VideosSections =============== */
+    .video_us .product_video {
+        background-size: 110% 100%;
+        padding: 230px 0;
+    }
+    /* ============== End VideosSections =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding-bottom: 10px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 13%;
+        width: 74%;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) { 
+    /* ============== Start Navbar ===============  */
+    .navbar {
+        padding-top: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navChange {
+        background: #fff;
+        padding: 0;
+        position: fixed;
+        border-bottom: 4px solid #1E2A40;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbarMenu {
+        color: #1E2A40;
+    }
+
+    .navbar-toggler {
+        border: 2.5px solid #1E2A40;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .mobileNavbar {
+        background: #fff;
+    }
+
+    .navbar-nav {
+        border-right:4px solid #1E2A40 !important;
+        background: #fff;
+        padding: 20px 0;
+    } 
+
+    .navChange {
+        padding: 0px 16px 0px;
+    }
+
+    .navChange .navbar-nav {
+        border-right: none !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #1E2A40 !important; 
+        border: none;
+        font-size: 18px !important;
+        padding: 5px 0 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background: #1E2A40;
+        color: #fff !important;
+        padding-left: 30px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        border: none;
+    }
+
+    .dropdown .dropdown-menu {
+        border: none;
+        border-left: 4px solid #1E2A40;
+        border-radius: 0;
+    }
+    
+    .dropdown .dropdown-menu .dropdown-item {
+        font-size: 17px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .dropdown .dropdown-menu .dropdown-item:hover {
+        padding-left: 40px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start Main =============== */
+    main {
+        height: 160px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start header =============== */
+    header {
+        padding: 130px 0;
+    }
+    /* ============== End header =============== */
+    /* ============== Start SearchInput =============== */
+    .SearchInput {
+        padding: 60px 0;
+    }
+
+    .SearchInput input {
+        width: 47%;
+    }
+    /* ============== End SearchInput =============== */
+    /* ============== Start VideosSections =============== */
+    .video_us .product_video {
+        background-size: 110% 100%;
+        padding: 200px 0;
+    }
+
+    .videoSection p {
+        font-size: 18px;
+    }
+    /* ============== End VideosSections =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 5%;
+        width: 90%;
+    }
+
+    footer .footerCenter ul:first-child a {
+        font-size: 18px;
+    }
+
+    footer .footerCenter ul:last-child {
+        margin-top: 0px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) { 
+    /* ============== Start SearchInput =============== */
+    .SearchInput {
+        padding: 60px 0;
+    }
+
+    .SearchInput input {
+        width: 55%;
+    }
+
+    .SearchInput i {
+        margin-left: 239px;
+    }
+    /* ============== End SearchInput =============== */
+    /* ============== Start VideosSections =============== */
+    .total_videos {
+        padding-bottom: 40px;
+    }
+
+    .video_us .product_video {
+        background-size: 110% 100%;
+        background-position: center bottom;
+        padding: 140px 0;
+    }
+
+    .video_us .product_video .video_play i {
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    .videoSection p {
+        font-size: 17px;
+    }
+    /* ============== End VideosSections =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child {
+        margin-top: 30px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 10%;
+        width: 80%;
+    }
+
+    footer .footerRight {
+        margin-top: -210px;
+        margin-left: 400px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) { 
+    /* ============== Start Navbar ===============  */
+    .navbar-brand img {
+       height: 60px !important;
+       width: 100px !important;
+    }
+
+    .navChange .navbar-toggler {
+        margin-right: 10px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start header =============== */
+    header {
+        padding: 120px 0;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    /* ============== End header =============== */
+    /* ============== Start SearchInput =============== */
+    .SearchInput {
+        padding: 50px 0;
+    }
+
+    .SearchInput input {
+        width: 80%;
+        padding: 7px 60px 7px 20px;
+    }
+    
+    .SearchInput i {
+        margin-left: 70%;
+        padding: 11px 20px;
+    }
+    /* ============== End SearchInput =============== */
+    /* ============== Start VideosSections =============== */
+    .video_us .product_video {
+        background-size: 140% 100%;
+        padding: 120px 0;
+    }
+
+    .video_us .product_video .video_play {
+        margin-left: -70px;
+        margin-top: -60px;
+    }
+
+    .video_us .product_video .video_play i {
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    .videoSection p {
+        margin-bottom: -10px;
+    }
+    /* ============== End VideosSections =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 40px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 90px; 
+        height: 60px;
+    }
+
+    footer .footerRight {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    footer .footerRight img {
+        height: 70px;
+        margin-top: 10px;
+    }
+    
+    footer .footerLeft,
+    footer .footerRight {
+        display: flex; 
+        justify-content: center !important;
+    }
+
+    footer .footerRight img:hover {
+        transform: scale(1.1);
+    }
+    /* ============== End footer =============== */
+}
+
+
+
+
+
+

@@ -1,0 +1,537 @@
+/* ============== Start Global ===============  */
+* {
+    margin: 0;
+    padding: 0;   
+}
+/* ============== End Global ===============  */
+/* ============== Start Navbar ===============  */
+.navbar {
+    padding-top: 30px;
+    transition: 0.3s ease-in-out;
+    z-index: 2000 !important;
+}
+
+.navChange {
+    background: #fff;
+    padding: 0;
+    position: fixed;
+    border-bottom: 4px solid #1E2A40;
+    transition: 0.3s ease-in-out;
+    z-index: 200 !important
+}
+
+.navChange .navbar-nav .nav-link {
+    color: #1E2A40 !important; 
+    border-color:#1E2A40 !important;
+    font-size: 15px;
+}
+
+.navChange .navbar-nav .nav-link:hover {
+    background: #1E2A40;
+    color: #fff !important;
+}
+
+.navChange .navbar-brand {
+    padding: 0 !important;
+}
+
+.navChange img {
+    transform: scale(0.7,0.7);
+}
+
+.navChange img:hover {
+    transform: scale(0.8,0.8) !important;
+}
+
+.navbar .navbar-brand img {
+    height: 72.5px;
+    width: 125px;
+    transition: 0.3s ease-in-out;
+}   
+
+.navbar .navbar-brand img:hover {
+    transform: scale(1.2 , 1.2);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    border-right: 2px solid #fff;
+    padding: 0 10px;
+    transition: 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .contactPage {
+    border-right: none;
+}
+
+.dropdown .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid #1E2A40;
+    border-radius: 0;
+}
+
+.nav-item .dropdown-menu a:hover {
+    background: #1e2a40;
+    color: #fff;
+}
+/* ============== End Navbar ===============  */
+/* ============== Start Main =============== */
+main {
+    background-image: url("../images/videos/mainBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top top;
+    height: 200px;
+    margin-top: -121px;
+}
+/* ============== End Main =============== */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    z-index: 5;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #1E2A40;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* ============== End go_up icon =============== */
+/* ============== Start header =============== */
+header {
+    background-image: url("../images/where_to_buy/whereToBuyBackground.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+header h1 {
+    color: #fff;
+}
+/* ============== End header =============== */
+/* ============== Start buyingAccount =============== */
+.buyingAccount {
+    background-image: url("../images/where_to_buy/searchBackground.svg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 250px 0
+}
+
+.buyingAccount .accountSection {
+    padding: 40px 0;
+}
+
+.buyingAccount .accountSection h2 {
+    color: #1E2A40;
+    font-weight: 700;
+}
+
+.buyingAccount .accountSection .searchInput input {
+    padding: 7px 40px 7px 15px;
+    border-radius: 10px;   
+    width: 80%; 
+    outline: none;
+    border: none;
+    margin: 10px 0;
+}
+
+.buyingAccount .accountSection .searchInput img {
+    height: 25px;
+    width: 25px;
+    margin-left: -35px;
+    margin-top: -5px;
+}
+
+.buyingAccount .accountSection h3 {
+    color: #699F3C;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.buyingAccount .accountSection p {
+    color: #1E2A40;
+    font-weight: 600;
+    font-size: 20px;
+}
+/* ============== End buyingAccount =============== */
+/* ============== Start footer =============== */
+footer {
+    padding: 60px 0 20px 0;
+    background-image: linear-gradient(#fff, #EABA6C);
+}
+
+footer .footerLeft img {
+    width: 145px; 
+    height: 84.5px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footerLeft img:hover {
+    transform: scale(1.2,1.2);
+}
+
+footer .footerCenter ul:first-child {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+footer .footerCenter ul:first-child::after {
+    position: absolute;
+    content: '';
+    left: 19%;
+    top: 100%;
+    height: 2px;
+    background: #000;
+    width: 62%;
+}
+
+footer .footerCenter ul:first-child a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+footer .footerCenter ul:first-child a:hover {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+footer .footerCenter ul:last-child {
+    margin-top: 20px;
+}
+
+footer .footerCenter ul:last-child i {
+    text-decoration: none;
+    color: #fff;
+    background: #333033;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+footer .footerCenter ul:last-child i:hover {
+    color: #333033;
+    background: #fff;
+}
+
+footer .footerRight img {
+    width: 94px; 
+    height: 91.5px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footerRight img:hover {
+    transform: scale(1.2,1.2);
+}
+/* ============== End footer =============== */
+
+/* ################ Start the responsive of the page ################ */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ============== Start Navbar ===============  */
+    .navChange .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 65px;
+        width: 110px;
+    }   
+
+    .navbar .navbar-brand img:hover {
+        transform: scale(1.1 , 1.1);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    } 
+    /* ============== End Navbar ===============  */
+    /* ============== Start header =============== */
+    header {
+        background-position: center;
+    }
+    /* ============== End header =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        right: 20px;
+    }
+    /* ============== End go_up icon =============== */
+    /* ============== Start buyingAccount =============== */
+    .buyingAccount {
+        padding: 170px 0;
+    } 
+    /* ============== End buyingAccount =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding-bottom: 10px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 13%;
+        width: 74%;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) { 
+    /* .container {
+        background: green;
+    } */
+    /* ============== Start Navbar ===============  */
+    .navbar {
+        padding-top: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navChange {
+        background: #fff;
+        padding: 0;
+        position: fixed;
+        border-bottom: 4px solid #1E2A40;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbarMenu {
+        color: #1E2A40;
+    }
+
+    .navbar-toggler {
+        border: 2.5px solid #1E2A40;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .mobileNavbar {
+        background: #fff;
+    }
+
+    .navbar-nav {
+        border-right:4px solid #1E2A40 !important;
+        background: #fff;
+        padding: 20px 0;
+    } 
+
+    .navChange {
+        padding: 0px 16px 0px;
+    }
+
+    .navChange .navbar-nav {
+        border-right: none !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: #1E2A40 !important; 
+        border: none;
+        font-size: 18px !important;
+        padding: 5px 0 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background: #1E2A40;
+        color: #fff !important;
+        padding-left: 30px !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        border: none;
+    }
+
+    .dropdown .dropdown-menu {
+        border: none;
+        border-left: 4px solid #1E2A40;
+        border-radius: 0;
+    }
+    
+    .dropdown .dropdown-menu .dropdown-item {
+        font-size: 17px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .dropdown .dropdown-menu .dropdown-item:hover {
+        padding-left: 40px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start Main =============== */
+    main {
+        height: 160px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start header =============== */
+    header {
+        padding: 130px 0;
+    }
+    /* ============== End header =============== */
+    /* ============== Start buyingAccount =============== */
+    .buyingAccount .accountSection h2 {
+        font-size: 30px;
+    }
+
+    .buyingAccount .accountSection h3 {
+        font-size: 25px;
+    }
+
+    .buyingAccount .accountSection p {
+        font-size: 18px;
+    }
+    /* ============== End buyingAccount =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 5%;
+        width: 90%;
+    }
+
+    footer .footerCenter ul:first-child a {
+        font-size: 18px;
+    }
+
+    footer .footerCenter ul:last-child {
+        margin-top: 0px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) { 
+    /* ============== Start footer =============== */
+    footer {
+        padding: 60px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 120px; 
+        height: 70px;
+    }
+
+    footer .footerCenter ul:first-child {
+        margin-top: 30px;
+    }
+
+    footer .footerCenter ul:first-child::after {
+        left: 10%;
+        width: 80%;
+    }
+
+    footer .footerRight {
+        margin-top: -210px;
+        margin-left: 400px;
+    }
+
+    footer .footerRight img {
+        height: 80px;
+    }
+    /* ============== End footer =============== */
+    /* ============== Start buyingAccount =============== */
+    .buyingAccount {
+        padding: 130px 0;    
+        background-position: center;
+    }
+    /* ============== End buyingAccount =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) { 
+    /* ============== Start Navbar ===============  */
+    .navbar-brand img {
+       height: 60px !important;
+       width: 100px !important;
+    }
+
+    .navChange .navbar-toggler {
+        margin-right: 10px;
+    }
+    /* ============== End Navbar ===============  */
+    /* ============== Start header =============== */
+    header {
+        padding: 120px 0;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    /* ============== End header =============== */
+    /* ============== Start footer =============== */
+    footer {
+        padding: 40px 0 10px 0;
+    }
+
+    footer .footerLeft img {
+        width: 90px; 
+        height: 60px;
+    }
+
+    footer .footerRight {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    footer .footerRight img {
+        height: 70px;
+        margin-top: 10px;
+    }
+    
+    footer .footerLeft,
+    footer .footerRight {
+        display: flex; 
+        justify-content: center !important;
+    }
+
+    footer .footerRight img:hover {
+        transform: scale(1.1);
+    }
+    /* ============== End footer =============== */
+    /* ============== Start buyingAccount =============== */
+    .buyingAccount {
+        padding: 100px 0;    
+        background-position: center;
+    }
+    .buyingAccount .accountSection {
+        padding: 0 15px;
+    }
+    .buyingAccount .accountSection h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .buyingAccount .accountSection h3 {
+        font-size: 23px;
+    }
+    /* ============== End buyingAccount =============== */
+}
+
+
+
+
+
+
