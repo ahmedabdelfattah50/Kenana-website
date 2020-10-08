@@ -16,35 +16,7 @@ body {
 }
 
 .navChange {
-    background: #fff;
-    padding: 0;
-    position: fixed;
-    border-bottom: 4px solid #1E2A40;
-    transition: 0.3s ease-in-out;
-    z-index: 200 !important
-}
-
-.navChange .navbar-nav .nav-link {
-    color: #1E2A40 !important; 
-    border-color:#1E2A40 !important;
-    font-size: 15px;
-}
-
-.navChange .navbar-nav .nav-link:hover {
-    background: #1E2A40;
-    color: #fff !important;
-}
-
-.navChange .navbar-brand {
-    padding: 0 !important;
-}
-
-.navChange img {
-    transform: scale(0.7,0.7);
-}
-
-.navChange img:hover {
-    transform: scale(0.8,0.8) !important;
+    position: relative;
 }
 
 .navbar .navbar-brand img {
@@ -85,79 +57,113 @@ body {
     color: #fff;
 }
 /* ============== End Navbar ===============  */
-/* ============== Start Main =============== */
-main {
-    background: #F6D396;
-    background-image: url("../images/news/mainBackground1.png");
+/* ============== Start header =============== */
+header {
+    background-image: url("../images/balls_products/headerBackground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top top;
-    height: 200px;
+    padding: 80px 0;
     margin-top: -121px;
-}
-/* ============== End Main =============== */
-/* ============== Start header =============== */
-header {
-    background: #c0bfbd;
-    background-image: url("../images/news/newsBackground.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 150px 0;
-}
-
-header h1 {
-    color: #fff;
+    box-shadow: inset 0px -5px 10px rgb(194, 168, 130);
 }
 /* ============== End header =============== */
-/* ============== Start go_up icon =============== */
-.go_up {
-    position: fixed;
-    z-index: 5;
-    right: 40px;
-    top: 90%;
-    padding: 15px 10px;
-    background: #1E2A40;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
-/* ============== End go_up icon =============== */
-/* ============== Start kenanaNews =============== */
-.kenanaNews {
-    padding: 120px 0 60px;
+/* ============== Start Main =============== */
+main {
+    background: rgb(197,110,80);
+    background: linear-gradient(0deg, rgba(197,110,80,1) 0%, rgba(247,196,114,1) 40%);
+    padding: 220px 0 50px;
 }
 
-.kenanaNews .newsSection {
-    margin-bottom: 80px;
-    padding: 15px 15px 25px;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 30px rgb(185, 182, 182);
+main .parahSection {
+    margin-top: -250px;
+    padding: 0 300px;
 }
 
-.kenanaNews .newsSection img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.kenanaNews .newsSection p {
+main .parahSection p {
+    color: #000;
     font-weight: 600;
+    line-height: 20px;
+    font-size: 18px;
 }
 
-.kenanaNews .newsSection a {
-    padding: 7px 20px;
-    background: #007C39;
+main .total_info {
+    margin-top: -50px;
+}
+
+main .product_img {
+    padding-right: 50px;
+}
+
+main .product_img img {
+    width: 300px;
+    height: 400px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+main .product_img img:hover {
+    transform: scale(1.1);
+}
+
+main .product_info h2 {
+    color: #1E2A40;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+main .product_info h1 {
+    color: #8C0E12;
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}   
+
+main .product_info h1::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    width: 55%;
+    height: 3px;
+    background: #1E2A40;
+}
+
+main .product_info p {
+    color: #1E2A40;
+    font-size: 25px;
+}
+
+main .product_info .prod_description p {
+    color: #1E2A40;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+main .product_info .prod_description span {
+    color: #1E2A40;
+    font-size: 25px;
+    line-height: 19px;
+    margin-left: 60px;
+}
+
+main .arrows_links {
+    padding: 0 50px;
+}
+
+main .arrows_links a { 
+    margin-top: -250px;
+    margin-bottom: 250px;
+    z-index: 50;
+}
+
+main .arrows_links i {
     color: #fff;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
+    font-size: 35px;
 }
-
-.kenanaNews .newsSection a:hover {
-    box-shadow: 0 0 10px #007C39;
-}
-/* ============== End kenanaNews =============== */
+/* ============== End Main =============== */
 /* ============== Start footer =============== */
 footer {
     padding: 60px 0 20px 0;
@@ -230,7 +236,7 @@ footer .footerRight img {
 }
 
 footer .footerRight img:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2); 
 }
 /* ============== End footer =============== */
 /* ===== Start load spinner ===== */
@@ -400,16 +406,68 @@ footer .footerRight img:hover {
         font-size: 14px;
     } 
     /* ============== End Navbar ===============  */
-    /* ============== Start header =============== */
-    header {
-        background-position: center;
+    /* ============== Start Main =============== */
+    main .parahSection {
+        padding: 0 200px;
     }
-    /* ============== End header =============== */
-    /* ============== Start go_up icon =============== */
-    .go_up {
-        right: 20px;
+
+    main .total_info {
+        margin-top: -50px;
     }
-    /* ============== End go_up icon =============== */
+
+    main .product_img {
+        padding-right: 50px;
+    }
+
+    main .product_img img {
+        width: 270px;
+        height: 370px;
+    }
+
+    main .product_img img:hover {
+        transform: scale(1.1);
+    }
+
+    main .product_info h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    main .product_info h1 {
+        font-size: 32px;
+        margin-top: -10px;
+        padding-bottom: 2px;
+    }   
+
+    main .product_info h1::after {
+        width: 60%;
+    }
+
+    main .product_info p {
+        font-size: 22px;
+    }
+
+    main .product_info .prod_description p {
+        font-size: 22px;
+    }
+
+    main .product_info .prod_description span {
+        font-size: 22px;
+    }
+
+    main .arrows_links {
+        padding: 0 50px;
+    }
+
+    main .arrows_links a { 
+        margin-top: -230px;
+        margin-bottom: 230px;
+    }
+
+    main .arrows_links i {
+        font-size: 30px;
+    }
+    /* ============== End Main =============== */
     /* ============== Start footer =============== */
     footer {
         padding-bottom: 10px;
@@ -423,7 +481,7 @@ footer .footerRight img:hover {
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {    
     /* ============== Start Navbar ===============  */
     .navbar {
         padding-top: 30px;
@@ -502,27 +560,60 @@ footer .footerRight img:hover {
     /* ============== End Navbar ===============  */
     /* ============== Start Main =============== */
     main {
-        height: 160px;
+        background-position: center top;
+    }
+
+    main .parahSection {
+        padding: 0 100px;
+    }
+
+    main .total_info {
+        margin-top: -50px;
+    }
+
+    main .product_img {
+        padding: 0px;
+    }
+
+    main .product_img img {
+        height: 340px;
+    }
+
+    main .product_info {
+        padding: 30px 0 0 220px;
+    }
+
+    main .product_info h2 {
+        font-size: 23px;
+    }
+
+    main .product_info h1 {
+        font-size: 28px;
+    }   
+
+    main .product_info h1::after {
+        width: 50%;
+        height: 2.7px;
+    }
+
+    main .product_info p {
+        font-size: 20px;
+    }
+
+    main .product_info .prod_description p {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    main .product_info .prod_description span {
+        font-size: 20px;
+    }
+
+    main .arrows_links a { 
+        margin-top: -320px;
+        margin-bottom: 320px;
     }
     /* ============== End Main =============== */
-    /* ============== Start header =============== */
-    header {
-        padding: 130px 0;
-    }
-    /* ============== End header =============== */
-    /* ============== Start kenanaNews =============== */
-    .kenanaNews {
-        padding: 100px 0 50px;
-    }
-
-    .kenanaNews .newsSection {
-        margin-bottom: 50px;
-    }
-
-    .kenanaNews .newsSection p {
-        font-size: 15px;
-    }
-    /* ============== End kenanaNews =============== */
     /* ============== Start footer =============== */
     footer {
         padding: 60px 0 10px 0;
@@ -554,11 +645,53 @@ footer .footerRight img:hover {
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) { 
-    /* ============== Start kenanaNews =============== */
-    .kenanaNews .newsSection p {
-        font-size: 17px;
+    /* ============== Start Main =============== */
+    main {
+        background-position: center center;
     }
-    /* ============== End kenanaNews =============== */
+
+    main .parahSection {
+        padding: 0 50px;
+    }
+
+    main .total_info {
+        margin-top: -50px;
+    }
+
+    main .product_img {
+        padding: 0px;
+    }
+
+    main .product_img img {
+        height: 300px;
+        width: 250px;
+    }
+
+    main .product_info {
+        padding: 35px 0 0 135px;
+    }
+
+    main .product_info h2 {
+        font-size: 20px;
+    }
+
+    main .product_info h1 {
+        font-size: 25px;
+    }
+
+    main .product_info h1::after {
+        width: 58%;
+        height: 2.7px;
+    }
+
+    main .arrows_links {
+        padding: 0 20px;
+    }
+
+    main .arrows_links i {
+        font-size: 25px;
+    } 
+    /* ============== End Main =============== */
     /* ============== Start footer =============== */
     footer {
         padding: 60px 0 10px 0;
@@ -601,23 +734,82 @@ footer .footerRight img:hover {
         margin-right: 10px;
     }
     /* ============== End Navbar ===============  */
-    /* ============== Start header =============== */
-    header {
-        padding: 120px 0;
+    /* ============== Start Main =============== */
+    main {
+        background-position: center center;
     }
-    header h1 {
-        font-size: 35px;
+
+    main .parahSection {
+        padding: 0 20px;
     }
-    /* ============== End header =============== */
-    /* ============== Start kenanaNews =============== */
-    .kenanaNews {
-        padding-bottom: 20px;
+
+    main .parahSection p {    
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    main .total_info {
+        margin-top: -50px;
+    }
+
+    main .product_img {
+        padding: 0px;
+        justify-content: center;
+    }
+
+    main .product_img img {
+        height: 250px;
+        width: 180px;
+    }
+
+    main .product_info {
+        padding: 30px 20px 0 20px;
     }
     
-    .kenanaNews .newsSection p {
-        font-size: 15px;
+    main .product_info h2 {
+        font-size: 18px;
     }
-    /* ============== End kenanaNews =============== */
+
+    main .product_info h1 {
+        font-size: 22px;
+    }
+
+    main .product_info h1::after {
+        width: 75%;
+        height: 2.5px;
+    }
+
+    main .product_info p {
+        font-size: 18px;
+    }
+
+    main .product_info .prod_description p {
+        font-size: 18px;
+        line-height: 10px;
+    } 
+
+    main .product_info .prod_description {
+        justify-content: space-between;
+    }
+
+    main .product_info .prod_description span {
+        margin: 0;
+    }
+
+    main .arrows_links {
+        padding: 0 20px;
+    }
+
+    main .arrows_links a { 
+        margin-top: -400px;
+        margin-bottom: 400px;
+    }
+
+    main .arrows_links i {
+        font-size: 20px;
+    } 
+    /* ============== End Main =============== */
     /* ============== Start footer =============== */
     footer {
         padding: 40px 0 10px 0;
@@ -649,9 +841,3 @@ footer .footerRight img:hover {
     }
     /* ============== End footer =============== */
 }
-
-
-
-
-
-
